@@ -1,0 +1,36 @@
+GET http://localhost:9999
+
+<> 2020-12-29T120537.200.txt
+
+###
+
+GET http://localhost:9999/hello
+
+<> 2020-12-29T120534.200.txt
+
+###
+
+GET http://localhost:9999/world
+
+<> 2020-12-29T120354.200.txt
+
+###
+
+GET http://localhost:9999/world
+
+<> 2020-12-29T120302.200.txt
+
+###
+
+GET http://localhost:9999/hello
+
+<> 2020-12-29T120237.200.txt
+
+###
+
+GET http://localhost:9999
+
+<> 2020-12-29T120222.200.txt
+
+###
+
