@@ -2,6 +2,7 @@ package sfpxm
 
 import (
 	"fmt"
+	"log"
 	"net/http"
 )
 
@@ -31,12 +32,17 @@ func (engine *Engine) POST(pattern string, handler HandlerFunc) {
 	engine.addRoute("POST", pattern, handler)
 }
 
+//  ServeHTTP implements http ListenAnServe interface
 func (engine *Engine) ServeHTTP(w http.ResponseWriter, req *http.Request) {
 	key := req.Method + "-" + req.URL.Path
 	if handler, ok := engine.router[key]; ok {
 		handler(w, req)
 	} else {
-		fmt.Fprintf(w, "404 NOT FOUND: %q\n", req.URL)
+		_, err := fmt.Fprintf(w, "404 NOT FOUND: %q\n", req.URL)
+		// err server error log
+		if err != nil {
+			log.Println(err.Error())
+		}
 	}
 }
 

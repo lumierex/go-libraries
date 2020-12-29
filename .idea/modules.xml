@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/go-libraries.iml" filepath="$PROJECT_DIR$/go-libraries.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sfpxm/sfpxm.iml" filepath="$PROJECT_DIR$/sfpxm/sfpxm.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sfpxm-cache/sfpxm-cache.iml" filepath="$PROJECT_DIR$/sfpxm-cache/sfpxm-cache.iml" />
+    </modules>
+  </component>
+</project>

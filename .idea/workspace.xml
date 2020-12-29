@@ -1,7 +1,167 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="c165f355-c048-4607-a091-311d55e0aaaf" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/sfpxm/sfpxm.go" beforeDir="false" afterPath="$PROJECT_DIR$/sfpxm/sfpxm.go" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Go File" />
+      </list>
+    </option>
+  </component>
+  <component name="GOROOT" path="C:\Go" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitToolBoxStore">
+    <option name="projectConfigVersion" value="2" />
+  </component>
+  <component name="GoLibraries">
+    <option name="indexEntireGoPath" value="false" />
+  </component>
+  <component name="MacroExpansionManager">
+    <option name="directoryName" value="w6utyf2k" />
+  </component>
+  <component name="ProjectId" id="1mJY8hUMS2lSOp8obJ8C1BXOGwj" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultGoTemplateProperty" value="Go File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="go.import.settings.migrated" value="true" />
+    <property name="jdk.selected.JAVA_MODULE" value="1.8" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RestClientSettings">
+    <option name="REQUEST_HISTORY">
+      <list>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:9999" />
+          <option name="urlPath" value="" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:9999/hello" />
+          <option name="urlPath" value="" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:9999/world" />
+          <option name="urlPath" value="" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="HTTP Request.sfpxm-test#2">
+    <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
+      <module name="go-libraries" />
+      <go_parameters value="-i" />
+      <kind value="FILE" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build go-libraries/test/sfpxm-test" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="go-libraries" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <filePath value="$PROJECT_DIR$/test/sfpxm-test/main.go" />
+      <package value="go-libraries/test/sfpxm-test" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="GoTestRunConfiguration" factoryName="Go Test">
+      <module name="go-libraries" />
+      <go_parameters value="-i" />
+      <framework value="gotest" />
+      <kind value="DIRECTORY" />
+      <method v="2" />
+    </configuration>
+    <configuration name="sfpxm-test#1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/test/sfpxm-test/sfpxm-test.http" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="sfpxm-test#2" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/test/sfpxm-test/sfpxm-test.http" index="2" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="sfpxm-test#3" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/test/sfpxm-test/sfpxm-test.http" index="3" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="HTTP Request.sfpxm-test#2" />
+        <item itemvalue="HTTP Request.sfpxm-test#3" />
+        <item itemvalue="HTTP Request.sfpxm-test#1" />
+        <item itemvalue="Go Build.go build go-libraries/test/sfpxm-test" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c165f355-c048-4607-a091-311d55e0aaaf" name="Default Changelist" comment="" />
+      <created>1609213003004</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1609213003004</updated>
+      <workItem from="1609213005594" duration="3027000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="VgoProject">
+    <integration-enabled>true</integration-enabled>
+    <auto-vendoring-mode>false</auto-vendoring-mode>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="658" y="149" key="#Project_Structure" timestamp="1609213009629">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="658" y="149" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1609213009629" />
+    <state width="941" height="276" key="GridCell.Tab.0.bottom" timestamp="1609214742467">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="941" height="276" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1609214742467" />
+    <state width="941" height="276" key="GridCell.Tab.0.center" timestamp="1609214742467">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="941" height="276" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1609214742467" />
+    <state width="941" height="276" key="GridCell.Tab.0.left" timestamp="1609214742467">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="941" height="276" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1609214742467" />
+    <state width="941" height="276" key="GridCell.Tab.0.right" timestamp="1609214742467">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="941" height="276" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1609214742467" />
+    <state x="687" y="207" key="new project wizard" timestamp="1609213357727">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="687" y="207" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1609213357727" />
   </component>
 </project>

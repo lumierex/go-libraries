@@ -1,0 +1,1 @@
+module "sfpxm-web-core"
