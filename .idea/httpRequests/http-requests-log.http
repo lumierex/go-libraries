@@ -1,3 +1,9 @@
+GET http://localhost:9999/hello
+
+<> 2020-12-30T120715.200.txt
+
+###
+
 GET http://localhost:9999
 
 <> 2020-12-29T120537.200.txt
