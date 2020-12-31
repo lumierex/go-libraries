@@ -5,6 +5,10 @@
       <module fileurl="file://$PROJECT_DIR$/go-libraries.iml" filepath="$PROJECT_DIR$/go-libraries.iml" />
       <module fileurl="file://$PROJECT_DIR$/sfpxm/sfpxm.iml" filepath="$PROJECT_DIR$/sfpxm/sfpxm.iml" />
       <module fileurl="file://$PROJECT_DIR$/sfpxm-cache/sfpxm-cache.iml" filepath="$PROJECT_DIR$/sfpxm-cache/sfpxm-cache.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sfpxm-orm/sfpxm-orm.iml" filepath="$PROJECT_DIR$/sfpxm-orm/sfpxm-orm.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sfpxm-rpc/sfpxm-rpc.iml" filepath="$PROJECT_DIR$/sfpxm-rpc/sfpxm-rpc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sfpxm-util/sfpxm-util.iml" filepath="$PROJECT_DIR$/sfpxm-util/sfpxm-util.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sfpxm-web-core/sfpxm-web-core.iml" filepath="$PROJECT_DIR$/sfpxm-web-core/sfpxm-web-core.iml" />
     </modules>
   </component>
 </project>

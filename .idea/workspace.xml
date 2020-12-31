@@ -1,8 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="c165f355-c048-4607-a091-311d55e0aaaf" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/sfpxm/sfpxm.go" beforeDir="false" afterPath="$PROJECT_DIR$/sfpxm/sfpxm.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/playground/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/playground/main.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,10 +30,46 @@
   </component>
   <component name="GOROOT" path="C:\Go" />
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="feature-0.0.0-cache" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitToolBoxStore">
     <option name="projectConfigVersion" value="2" />
+    <option name="recentBranches">
+      <RecentBranches>
+        <option name="branchesForRepo">
+          <list>
+            <RecentBranchesForRepo>
+              <option name="branches">
+                <list>
+                  <RecentBranch>
+                    <option name="branchName" value="feature-0.0.0-rpc" />
+                    <option name="lastUsedInstant" value="1609245465" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="feature-0.0.0-cache" />
+                    <option name="lastUsedInstant" value="1609245440" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="feature-0.0.0-web-core" />
+                    <option name="lastUsedInstant" value="1609245073" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="master" />
+                    <option name="lastUsedInstant" value="1609245072" />
+                  </RecentBranch>
+                </list>
+              </option>
+              <option name="repositoryRootUrl" value="file://$PROJECT_DIR$" />
+            </RecentBranchesForRepo>
+          </list>
+        </option>
+      </RecentBranches>
+    </option>
   </component>
   <component name="GoLibraries">
     <option name="indexEntireGoPath" value="false" />
@@ -47,8 +92,8 @@
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.43793103" />
   </component>
   <component name="RestClientSettings">
     <option name="REQUEST_HISTORY">
@@ -77,11 +122,19 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="HTTP Request.sfpxm-test#2">
+  <component name="RunManager" selected="Go Build.go build go-libraries/test/playground">
     <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
       <module name="go-libraries" />
       <go_parameters value="-i" />
       <kind value="FILE" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build go-libraries/test/playground" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="go-libraries" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <filePath value="$PROJECT_DIR$/test/playground/main.go" />
+      <package value="go-libraries/test/playground" />
       <method v="2" />
     </configuration>
     <configuration name="go build go-libraries/test/sfpxm-test" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
@@ -110,6 +163,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Build.go build go-libraries/test/playground" />
         <item itemvalue="HTTP Request.sfpxm-test#2" />
         <item itemvalue="HTTP Request.sfpxm-test#3" />
         <item itemvalue="HTTP Request.sfpxm-test#1" />
@@ -127,41 +181,56 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1609213003004</updated>
-      <workItem from="1609213005594" duration="3027000" />
+      <workItem from="1609213005594" duration="9085000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="2" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
     <auto-vendoring-mode>false</auto-vendoring-mode>
   </component>
   <component name="WindowStateProjectService">
-    <state x="658" y="149" key="#Project_Structure" timestamp="1609213009629">
+    <state x="658" y="149" key="#Project_Structure" timestamp="1609221029825">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="658" y="149" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1609213009629" />
-    <state width="941" height="276" key="GridCell.Tab.0.bottom" timestamp="1609214742467">
+    <state x="658" y="149" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1609221029825" />
+    <state width="1877" height="276" key="GridCell.Tab.0.bottom" timestamp="1609244765242">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="941" height="276" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1609214742467" />
-    <state width="941" height="276" key="GridCell.Tab.0.center" timestamp="1609214742467">
+    <state width="1877" height="276" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1609244765242" />
+    <state width="1877" height="276" key="GridCell.Tab.0.center" timestamp="1609244765241">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="941" height="276" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1609214742467" />
-    <state width="941" height="276" key="GridCell.Tab.0.left" timestamp="1609214742467">
+    <state width="1877" height="276" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1609244765241" />
+    <state width="1877" height="276" key="GridCell.Tab.0.left" timestamp="1609244765241">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="941" height="276" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1609214742467" />
-    <state width="941" height="276" key="GridCell.Tab.0.right" timestamp="1609214742467">
+    <state width="1877" height="276" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1609244765241" />
+    <state width="1877" height="276" key="GridCell.Tab.0.right" timestamp="1609244765241">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="941" height="276" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1609214742467" />
-    <state x="687" y="207" key="new project wizard" timestamp="1609213357727">
+    <state width="1877" height="276" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1609244765241" />
+    <state x="1204" y="232" key="RollbackChangesDialog" timestamp="1609301682048">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="687" y="207" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1609213357727" />
+    <state x="1204" y="232" key="RollbackChangesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1609301682048" />
+    <state x="568" y="206" key="new project wizard" timestamp="1609221142934">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="568" y="206" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1609221142934" />
   </component>
 </project>
