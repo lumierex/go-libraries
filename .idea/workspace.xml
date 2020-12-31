@@ -11,7 +11,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c165f355-c048-4607-a091-311d55e0aaaf" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/test/playground/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/test/playground/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sfpxm-rpc/codec/gob.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/rpc-test/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sfpxm-rpc/codec/codec.go" beforeDir="false" afterPath="$PROJECT_DIR$/sfpxm-rpc/codec/codec.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,6 +98,12 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.43793103" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\code\sdk\go-libraries\sfpxm-rpc" />
+    </key>
   </component>
   <component name="RestClientSettings">
     <option name="REQUEST_HISTORY">
@@ -122,9 +132,10 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Go Build.go build go-libraries/test/playground">
+  <component name="RunManager" selected="Go Build.go build go-libraries/test/rpc-test">
     <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
       <module name="go-libraries" />
+      <working_directory value="$PROJECT_DIR$" />
       <go_parameters value="-i" />
       <kind value="FILE" />
       <method v="2" />
@@ -137,16 +148,17 @@
       <package value="go-libraries/test/playground" />
       <method v="2" />
     </configuration>
-    <configuration name="go build go-libraries/test/sfpxm-test" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+    <configuration name="go build go-libraries/test/rpc-test" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="go-libraries" />
       <working_directory value="$PROJECT_DIR$" />
       <kind value="PACKAGE" />
-      <filePath value="$PROJECT_DIR$/test/sfpxm-test/main.go" />
-      <package value="go-libraries/test/sfpxm-test" />
+      <filePath value="$PROJECT_DIR$/test/rpc-test/main.go" />
+      <package value="go-libraries/test/rpc-test" />
       <method v="2" />
     </configuration>
     <configuration default="true" type="GoTestRunConfiguration" factoryName="Go Test">
       <module name="go-libraries" />
+      <working_directory value="$PROJECT_DIR$" />
       <go_parameters value="-i" />
       <framework value="gotest" />
       <kind value="DIRECTORY" />
@@ -163,11 +175,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Build.go build go-libraries/test/rpc-test" />
         <item itemvalue="Go Build.go build go-libraries/test/playground" />
         <item itemvalue="HTTP Request.sfpxm-test#2" />
         <item itemvalue="HTTP Request.sfpxm-test#3" />
         <item itemvalue="HTTP Request.sfpxm-test#1" />
-        <item itemvalue="Go Build.go build go-libraries/test/sfpxm-test" />
       </list>
     </recent_temporary>
   </component>
@@ -198,39 +210,52 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="docs: 拦截器,timer测试代码" />
+    <option name="LAST_COMMIT_MESSAGE" value="docs: 拦截器,timer测试代码" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
     <auto-vendoring-mode>false</auto-vendoring-mode>
   </component>
   <component name="WindowStateProjectService">
-    <state x="658" y="149" key="#Project_Structure" timestamp="1609221029825">
+    <state x="658" y="149" key="#Project_Structure" timestamp="1609408561229">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="658" y="149" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1609221029825" />
-    <state width="1877" height="276" key="GridCell.Tab.0.bottom" timestamp="1609244765242">
+    <state x="658" y="149" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1609408561229" />
+    <state width="1877" height="348" key="GridCell.Tab.0.bottom" timestamp="1609408585734">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="276" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1609244765242" />
-    <state width="1877" height="276" key="GridCell.Tab.0.center" timestamp="1609244765241">
+    <state width="1877" height="348" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1609408585734" />
+    <state width="1877" height="348" key="GridCell.Tab.0.center" timestamp="1609408585733">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="276" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1609244765241" />
-    <state width="1877" height="276" key="GridCell.Tab.0.left" timestamp="1609244765241">
+    <state width="1877" height="348" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1609408585733" />
+    <state width="1877" height="348" key="GridCell.Tab.0.left" timestamp="1609408585733">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="276" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1609244765241" />
-    <state width="1877" height="276" key="GridCell.Tab.0.right" timestamp="1609244765241">
+    <state width="1877" height="348" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1609408585733" />
+    <state width="1877" height="348" key="GridCell.Tab.0.right" timestamp="1609408585733">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="276" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1609244765241" />
+    <state width="1877" height="348" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1609408585733" />
     <state x="1204" y="232" key="RollbackChangesDialog" timestamp="1609301682048">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1204" y="232" key="RollbackChangesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1609301682048" />
+    <state x="549" y="145" key="SettingsEditor" timestamp="1609395780967">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="549" y="145" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1609395780967" />
     <state x="568" y="206" key="new project wizard" timestamp="1609221142934">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="568" y="206" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1609221142934" />
+    <state x="616" y="240" key="run.anything.popup" timestamp="1609406325177">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1609406325177" />
   </component>
 </project>
