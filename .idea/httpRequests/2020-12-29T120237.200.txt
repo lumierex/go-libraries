@@ -1,3 +1,0 @@
-Header["Connection"] = ["Keep-Alive"]
-Header["User-Agent"] = ["Apache-HttpClient/4.5.12 (Java/11.0.7)"]
-Header["Accept-Encoding"] = ["gzip,deflate"]
