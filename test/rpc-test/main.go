@@ -40,7 +40,8 @@ func main() {
 		// 发送消息头和消息体
 		h := &codec.Header{
 			ServiceMethod: "Foo.Sum",
-			Seq:           uint64(i),
+			// request sequence number
+			Seq: uint64(i),
 		}
 		_ = cc.Write(h, fmt.Sprintf("sfpxm rpc req %d", h.Seq))
 		_ = cc.ReadHeader(h)
