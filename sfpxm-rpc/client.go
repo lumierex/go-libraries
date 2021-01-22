@@ -1,8 +1,12 @@
 package sfpxm_rpc
 
 import (
+	"encoding/json"
 	"errors"
+	"fmt"
 	"io"
+	"log"
+	"net"
 	"sfpxm-rpc/codec"
 	"sync"
 )
@@ -106,4 +110,74 @@ func (c *Client) terminateCalls(err error) {
 // 3. call exist server start normal read reply from body
 func (c *Client) receive() {
 
+	// 1. remove call from client then get current call instance
+	// 2. handle call status
+
+	var err error
+	for err == nil {
+		var h codec.Header
+		if err = c.cc.ReadHeader(&h); err != nil {
+			break
+		}
+
+		call := c.removeCall(h.Seq)
+
+		switch {
+		case call == nil:
+			err = c.cc.ReadBody(nil)
+		case h.Error != "":
+			// server codec error
+			call.Error = fmt.Errorf(h.Error)
+			err = c.cc.ReadBody(nil)
+			call.done()
+		default:
+
+			err = c.cc.ReadBody(call.Reply)
+			if err != nil {
+				call.Error = errors.New("reading body " + err.Error())
+			}
+			call.done()
+		}
+	}
+
+	// server error or client happen error
+	// notify all pending calls error happend
+	// and cancel the pending call
+	c.terminateCalls(err)
+}
+
+func NewClient(conn net.Conn, opt *Option) (*Client, error) {
+	// exchange protocol when client was first created
+
+	f := codec.NewCodecFuncMap[opt.CodeType]
+	if f == nil {
+		// 没有对应的
+		err := fmt.Errorf("invalid code type %s", opt.CodeType)
+		log.Println("rpc client codec error ", err)
+		return nil, err
+	}
+
+	if err := json.NewEncoder(conn).Encode(opt); err != nil {
+		log.Println("rpc client: options error", err)
+		_ = conn.Close()
+		return nil, err
+	}
+
+	//
+	return nil, nil
+
+}
+
+//
+func newClientCodec(cc codec.Codec, opt *Option) *Client {
+	client := &Client{
+		seq:     1, // seq starts with 1
+		cc:      cc,
+		opt:     opt,
+		pending: make(map[uint64]*Call),
+	}
+
+	// receive call message
+	go client.receive()
+	return client
 }
