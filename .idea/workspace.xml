@@ -11,28 +11,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c165f355-c048-4607-a091-311d55e0aaaf" name="Default Changelist" comment="feat: client 结构体定义">
-      <change afterPath="$PROJECT_DIR$/samples/go.mod" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/samples/samples.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/samples/ws/internal/ws/conn.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sfpxm-design-pattern/factory/abstract_factory.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sfpxm-design-pattern/factory/easy_factory.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sfpxm-design-pattern/factory/easy_factory_test.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sfpxm-design-pattern/factory/factory.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sfpxm-design-pattern/factory/factory_test.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sfpxm-design-pattern/sfpxm-design-pattern.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sfpxm-design-pattern/strategy/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sfpxm-design-pattern/strategy/strategy.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sfpxm-design-pattern/strategy/strategy_test.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/playground/array/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/playground/slice/slice.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/playground/struct/struct.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/playground/ticker/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/struct/struct.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/struct/struct_test.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/ws/ws.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/ws/client/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/ws/internal/model/User.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/samples/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/samples/go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/ws/front/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/samples/ws/front/src/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/ws/front/src/components/HelloWorld.vue" beforeDir="false" afterPath="$PROJECT_DIR$/samples/ws/front/src/components/HelloWorld.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/ws/internal/ws/conn.go" beforeDir="false" afterPath="$PROJECT_DIR$/samples/ws/internal/ws/conn.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/ws/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/samples/ws/main.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +40,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="feature-0.0.0-cache" />
+        <entry key="$PROJECT_DIR$" value="feature-0.0.0-sfpxm-design-pattern" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -67,6 +54,10 @@
             <RecentBranchesForRepo>
               <option name="branches">
                 <list>
+                  <RecentBranch>
+                    <option name="branchName" value="feature-0.0.0-example" />
+                    <option name="lastUsedInstant" value="1617192869" />
+                  </RecentBranch>
                   <RecentBranch>
                     <option name="branchName" value="feature-0.0.0-sfpxm-design-pattern" />
                     <option name="lastUsedInstant" value="1613806595" />
@@ -82,10 +73,6 @@
                   <RecentBranch>
                     <option name="branchName" value="feature-0.0.0-web-core" />
                     <option name="lastUsedInstant" value="1609245073" />
-                  </RecentBranch>
-                  <RecentBranch>
-                    <option name="branchName" value="master" />
-                    <option name="lastUsedInstant" value="1609245072" />
                   </RecentBranch>
                 </list>
               </option>
@@ -109,6 +96,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultGoTemplateProperty" value="Go File" />
+    <property name="GO_FMT" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
@@ -158,28 +146,12 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Go Build.go build samples/ws">
+  <component name="RunManager" selected="Go Build.go build samples/ws/client">
     <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
       <module name="go-libraries" />
       <working_directory value="$PROJECT_DIR$" />
       <go_parameters value="-i" />
       <kind value="FILE" />
-      <method v="2" />
-    </configuration>
-    <configuration name="go build go-libraries/test/playground/struct" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="go-libraries" />
-      <working_directory value="$PROJECT_DIR$" />
-      <kind value="PACKAGE" />
-      <filePath value="$PROJECT_DIR$/test/playground/struct/struct.go" />
-      <package value="go-libraries/test/playground/struct" />
-      <method v="2" />
-    </configuration>
-    <configuration name="go build go-libraries/test/struct" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="go-libraries" />
-      <working_directory value="$PROJECT_DIR$" />
-      <kind value="PACKAGE" />
-      <filePath value="$PROJECT_DIR$/test/struct/struct.go" />
-      <package value="go-libraries/test/struct" />
       <method v="2" />
     </configuration>
     <configuration name="go build samples/ws" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
@@ -190,22 +162,12 @@
       <package value="samples/ws" />
       <method v="2" />
     </configuration>
-    <configuration name="Test_strategy in sfpxm-design-pattern/strategy" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
-      <module name="sfpxm-design-pattern" />
-      <working_directory value="$PROJECT_DIR$/sfpxm-design-pattern/strategy" />
-      <framework value="gotest" />
+    <configuration name="go build samples/ws/client" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="samples" />
+      <working_directory value="$PROJECT_DIR$/samples" />
       <kind value="PACKAGE" />
-      <package value="sfpxm-design-pattern/strategy" />
-      <pattern value="^Test_strategy$" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Test_structIsEqual in go-libraries/test/struct" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
-      <module name="go-libraries" />
-      <working_directory value="$PROJECT_DIR$/test/struct" />
-      <framework value="gotest" />
-      <kind value="PACKAGE" />
-      <package value="go-libraries/test/struct" />
-      <pattern value="^Test_structIsEqual$" />
+      <filePath value="$PROJECT_DIR$/samples/ws/client/main.go" />
+      <package value="samples/ws/client" />
       <method v="2" />
     </configuration>
     <configuration default="true" type="GoTestRunConfiguration" factoryName="Go Test">
@@ -216,13 +178,22 @@
       <kind value="DIRECTORY" />
       <method v="2" />
     </configuration>
+    <configuration name="sfpxm-test#1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/test/sfpxm-test/sfpxm-test.http" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="sfpxm-test#2" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/test/sfpxm-test/sfpxm-test.http" index="2" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="sfpxm-test#3" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/test/sfpxm-test/sfpxm-test.http" index="3" runType="Run single request">
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Build.go build samples/ws/client" />
         <item itemvalue="Go Build.go build samples/ws" />
-        <item itemvalue="Go Build.go build go-libraries/test/struct" />
-        <item itemvalue="Go Test.Test_structIsEqual in go-libraries/test/struct" />
-        <item itemvalue="Go Test.Test_strategy in sfpxm-design-pattern/strategy" />
-        <item itemvalue="Go Build.go build go-libraries/test/playground/struct" />
+        <item itemvalue="HTTP Request.sfpxm-test#3" />
+        <item itemvalue="HTTP Request.sfpxm-test#2" />
+        <item itemvalue="HTTP Request.sfpxm-test#1" />
       </list>
     </recent_temporary>
   </component>
@@ -254,8 +225,23 @@
       <workItem from="1616397714103" duration="6231000" />
       <workItem from="1616987911728" duration="609000" />
       <workItem from="1617160531563" duration="3966000" />
-      <workItem from="1617174225459" duration="10811000" />
+      <workItem from="1617174225459" duration="30587000" />
     </task>
+    <task id="LOCAL-00001" summary="feat: 简单工厂，策略模式">
+      <created>1617192712690</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1617192712690</updated>
+    </task>
+    <task id="LOCAL-00002" summary="feat: websocket init">
+      <created>1617192913317</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1617192913317</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -275,7 +261,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="docs: 拦截器,timer测试代码" />
-    <option name="LAST_COMMIT_MESSAGE" value="docs: 拦截器,timer测试代码" />
+    <MESSAGE value="feat: 简单工厂，策略模式" />
+    <MESSAGE value="feat: websocket init" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: websocket init" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
@@ -298,22 +286,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1614741139585" />
-    <state width="1876" height="192" key="GridCell.Tab.0.bottom" timestamp="1617190850540">
+    <state width="1876" height="333" key="GridCell.Tab.0.bottom" timestamp="1617257727080">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="192" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1617190850540" />
-    <state width="1876" height="192" key="GridCell.Tab.0.center" timestamp="1617190850539">
+    <state width="1876" height="333" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1617257727080" />
+    <state width="1876" height="333" key="GridCell.Tab.0.center" timestamp="1617257727079">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="192" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1617190850539" />
-    <state width="1876" height="192" key="GridCell.Tab.0.left" timestamp="1617190850539">
+    <state width="1876" height="333" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1617257727079" />
+    <state width="1876" height="333" key="GridCell.Tab.0.left" timestamp="1617257727079">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="192" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1617190850539" />
-    <state width="1876" height="192" key="GridCell.Tab.0.right" timestamp="1617190850539">
+    <state width="1876" height="333" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1617257727079" />
+    <state width="1876" height="333" key="GridCell.Tab.0.right" timestamp="1617257727079">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="192" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1617190850539" />
+    <state width="1876" height="333" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1617257727079" />
     <state width="1876" height="360" key="GridCell.Tab.1.bottom" timestamp="1616468242521">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -330,6 +318,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1876" height="360" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1616468242521" />
+    <state x="184" y="85" key="MergeDialog" timestamp="1617192866145">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="184" y="85" key="MergeDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1617192866145" />
     <state x="1204" y="232" key="RollbackChangesDialog" timestamp="1613806486251">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -338,6 +330,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="549" y="145" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1617174425521" />
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1617192926627">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1617192926627" />
+    <state x="661" y="252" width="598" height="536" key="find.popup" timestamp="1617241873230">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="661" y="252" width="598" height="536" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1617241873230" />
+    <state x="720" y="231" key="git4idea.branch.GitSmartOperationDialog" timestamp="1617192823814">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="720" y="231" key="git4idea.branch.GitSmartOperationDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1617192823814" />
+    <state x="669" y="306" key="git4idea.merge.GitPullDialog" timestamp="1617192765126">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="669" y="306" key="git4idea.merge.GitPullDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1617192765126" />
     <state x="568" y="206" key="new project wizard" timestamp="1617170210942">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -346,26 +354,5 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1609406325177" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/test/playground/ticker/main.go</url>
-          <line>6</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/test/struct/struct_test.go</url>
-          <line>12</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/test/struct/struct.go</url>
-          <line>15</line>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

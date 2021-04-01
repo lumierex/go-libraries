@@ -3,7 +3,9 @@ package main
 import (
 	"github.com/gin-gonic/gin"
 	"github.com/gorilla/websocket"
+	"log"
 	"net/http"
+	_ "samples/ws/internal/database"
 	w "samples/ws/internal/ws"
 )
 
@@ -31,13 +33,14 @@ func main() {
 		c := &w.Client{
 			Manager: manager,
 			Conn:    conn,
-			Send:    nil,
+			Send:    make(chan []byte, 256),
 			Id:      id,
 		}
 
 		manager.Register <- c
 
 		go c.Write()
+		//go c.Read()
 		go c.Read()
 
 		//for {
@@ -53,6 +56,7 @@ func main() {
 		//		break
 		//	}
 		//}
+		log.Println("finished ws: ")
 	})
 
 	r.Run(":8989")

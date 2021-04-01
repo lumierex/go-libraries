@@ -23,6 +23,7 @@ type Client struct {
 //
 func (c *Client) Read() {
 	defer func() {
+		log.Println("defer", c)
 		c.Manager.Unregister <- c
 		_ = c.Conn.Close()
 	}()
@@ -39,6 +40,7 @@ func (c *Client) Read() {
 			if websocket.IsUnexpectedCloseError(err, websocket.CloseGoingAway) {
 				log.Printf("error: %v", err)
 			}
+			log.Println("err: ", err)
 			break
 		}
 		bytes.TrimSpace(bytes.Replace(msg, newline, space, -1))
@@ -52,7 +54,8 @@ func (c *Client) Write() {
 	for msg := range c.Send {
 		_ = c.Conn.WriteMessage(websocket.TextMessage, msg)
 	}
-	defer c.Conn.Close()
+	log.Println("defer: write:closed")
+	c.Conn.Close()
 }
 
 type ClientManager struct {
@@ -78,8 +81,10 @@ func (m *ClientManager) Run() {
 		select {
 		// register
 		case c := <-m.Register:
+			log.Println("register client: ", c, c.Id)
 			m.Clients[c] = true
 		case c := <-m.Unregister:
+			log.Println("unRegister client: ", c, c.Id)
 			if _, ok := m.Clients[c]; ok {
 				delete(m.Clients, c)
 				close(c.Send) // close channel

@@ -15,7 +15,6 @@
 <script lang="ts">
     import {ref, defineComponent} from 'vue'
 
-    var ws : WebSocket
     export default defineComponent({
         name: 'HelloWorld',
         props: {
@@ -25,12 +24,11 @@
             }
         },
         setup: () => {
+            let ws: WebSocket;
             const count = ref(0)
             const receiveMsg = ref("")
-            return {count, receiveMsg}
-        },
-        methods: {
-            connectWebsocket: () => {
+
+            const connectWebsocket = () => {
                 alert("message")
                 ws = new WebSocket("ws://localhost:8989/ws")
                 ws.onopen = (evt) => {
@@ -39,16 +37,19 @@
                 }
 
                 ws.onmessage = (evt) => {
+                    receiveMsg.value = evt.data
                     console.log("receive message: ", evt.data)
                 }
 
                 ws.onclose = (evt) => {
                     console.log("close ws")
                 }
-            },
-            sendMessage() {
+            }
+            function sendMessage() {
                 ws.send("hi")
             }
+
+            return {count, receiveMsg, connectWebsocket, sendMessage}
         }
     })
 </script>
